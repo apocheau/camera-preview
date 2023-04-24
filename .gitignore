@@ -9,6 +9,6 @@ android/.gradle
 android/local.properties
 ios/Plugin.xcodeproj/xcuserdata
 ios/Plugin.xcworkspace/xcuserdata
-dist/
+#dist/
 .DS_Store
 .husky/

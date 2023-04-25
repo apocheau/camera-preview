@@ -475,14 +475,12 @@ To run the demo on your local network and access media devices, a secure context
 ### start(...)
 
 ```typescript
-start(options: CameraPreviewOptions) => any
+start(options: CameraPreviewOptions) => Promise<void>
 ```
 
 | Param         | Type                                                                  |
 | ------------- | --------------------------------------------------------------------- |
 | **`options`** | <code><a href="#camerapreviewoptions">CameraPreviewOptions</a></code> |
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -490,10 +488,8 @@ start(options: CameraPreviewOptions) => any
 ### stop()
 
 ```typescript
-stop() => any
+stop() => Promise<void>
 ```
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -501,14 +497,14 @@ stop() => any
 ### capture(...)
 
 ```typescript
-capture(options: CameraPreviewPictureOptions) => any
+capture(options: CameraPreviewPictureOptions) => Promise<{ value: string; }>
 ```
 
 | Param         | Type                                                                                |
 | ------------- | ----------------------------------------------------------------------------------- |
 | **`options`** | <code><a href="#camerapreviewpictureoptions">CameraPreviewPictureOptions</a></code> |
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
 
@@ -516,14 +512,14 @@ capture(options: CameraPreviewPictureOptions) => any
 ### captureSample(...)
 
 ```typescript
-captureSample(options: CameraSampleOptions) => any
+captureSample(options: CameraSampleOptions) => Promise<{ value: string; }>
 ```
 
 | Param         | Type                                                                |
 | ------------- | ------------------------------------------------------------------- |
 | **`options`** | <code><a href="#camerasampleoptions">CameraSampleOptions</a></code> |
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
 
@@ -531,10 +527,10 @@ captureSample(options: CameraSampleOptions) => any
 ### getSupportedFlashModes()
 
 ```typescript
-getSupportedFlashModes() => any
+getSupportedFlashModes() => Promise<{ result: CameraPreviewFlashMode[]; }>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;{ result: CameraPreviewFlashMode[]; }&gt;</code>
 
 --------------------
 
@@ -542,10 +538,10 @@ getSupportedFlashModes() => any
 ### getHorizontalFov()
 
 ```typescript
-getHorizontalFov() => any
+getHorizontalFov() => Promise<{ result: any; }>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;{ result: any; }&gt;</code>
 
 --------------------
 
@@ -553,14 +549,12 @@ getHorizontalFov() => any
 ### setFlashMode(...)
 
 ```typescript
-setFlashMode(options: { flashMode: CameraPreviewFlashMode | string; }) => any
+setFlashMode(options: { flashMode: CameraPreviewFlashMode | string; }) => Promise<void>
 ```
 
 | Param         | Type                                |
 | ------------- | ----------------------------------- |
 | **`options`** | <code>{ flashMode: string; }</code> |
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -568,10 +562,8 @@ setFlashMode(options: { flashMode: CameraPreviewFlashMode | string; }) => any
 ### flip()
 
 ```typescript
-flip() => any
+flip() => Promise<void>
 ```
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -579,14 +571,12 @@ flip() => any
 ### setOpacity(...)
 
 ```typescript
-setOpacity(options: CameraOpacityOptions) => any
+setOpacity(options: CameraOpacityOptions) => Promise<void>
 ```
 
 | Param         | Type                                                                  |
 | ------------- | --------------------------------------------------------------------- |
 | **`options`** | <code><a href="#cameraopacityoptions">CameraOpacityOptions</a></code> |
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -594,10 +584,8 @@ setOpacity(options: CameraOpacityOptions) => any
 ### stopRecordVideo()
 
 ```typescript
-stopRecordVideo() => any
+stopRecordVideo() => Promise<void>
 ```
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -605,14 +593,12 @@ stopRecordVideo() => any
 ### startRecordVideo(...)
 
 ```typescript
-startRecordVideo(options: CameraPreviewOptions) => any
+startRecordVideo(options: CameraPreviewOptions) => Promise<void>
 ```
 
 | Param         | Type                                                                  |
 | ------------- | --------------------------------------------------------------------- |
 | **`options`** | <code><a href="#camerapreviewoptions">CameraPreviewOptions</a></code> |
-
-**Returns:** <code>any</code>
 
 --------------------
 
